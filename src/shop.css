@@ -218,7 +218,6 @@ p {
 .categoriescontainer {
   display: flex;
   flex-direction: column;
-  align-items: right;
   margin-bottom: 20px;
 }
 

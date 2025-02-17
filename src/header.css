@@ -147,7 +147,7 @@ body {
   display: flex;
   position: fixed;
   top: 5.1rem;
-  left: 3rem;
+  right: 30%;
   padding-top: 0.5rem;
   padding-bottom: 0.75rem;
   flex-direction: column;
