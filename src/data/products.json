@@ -13,11 +13,11 @@
     },
     "alttext": "Vi smyckar julgranen med en stor stjärna",
     "link": "product-1.html",
-    "aria-label": "Läs mer om Produkt 1",
+    "aria-label": "Läs mer om vår vackra julgransstjärna i metall",
     "description": "Denna vackra julgransstjärna i metall blir den perfekta pricken över i:et på din julgran. Med sin imponerande storlek och glänsande yta sprider den ett varmt och festligt ljus som symboliserar julens magi.",
     "reviews": {
-      "average_rating": 4.5,
-      "total_reviews": 32
+      "average_rating": 4.1,
+      "total_reviews": 120
     }
   },
   {
@@ -34,11 +34,11 @@
     },
     "alttext": "När mörkret kommer tänder vi den här 7-armade adventsljusstaken",
     "link": "product-2.html",
-    "aria-label": "Läs mer om Produkt 2",
+    "aria-label": "Läs mer om vår 7-armade adventsljusstake",
     "description": "Denna vackra och eleganta klassiska 7-armade adventsljusstake i trä, sprider ett varmt ljus under hela december.",
     "reviews": {
       "average_rating": 4.5,
-      "total_reviews": 32
+      "total_reviews": 250
     }
   },
   {
@@ -58,8 +58,8 @@
     "aria-label": "Gå till produktsidan för de röda julgranskulorna",
     "description": "De röda julgranskulorna ger din julgran en traditionell och elegant touch. Dessa glittrande kulor reflekterar ljuset vackert och skapar en festlig stämning i hemmet. Säljs i en praktisk förpackning om 4 stycken.",
     "reviews": {
-      "average_rating": 4.5,
-      "total_reviews": 32
+      "average_rating": 4.8,
+      "total_reviews": 1350
     }
   },
   {
@@ -79,8 +79,8 @@
     "aria-label": "Gå till produktsidan för kristallstjärnorna",
     "description": "Dekorera din julgran med dessa exklusiva kristallstjärnor. Deras glittrande yta fångar ljuset på ett magiskt sätt och tillför en touch av elegans och lyx till julpyntet. Perfekta för en stilfull julgran.",
     "reviews": {
-      "average_rating": 4.5,
-      "total_reviews": 32
+      "average_rating": 5.0,
+      "total_reviews": 12
     }
   },
   {
@@ -100,8 +100,8 @@
     "aria-label": "Gå till produktsidan för de gammeldags julgranskulorna",
     "description": "Dessa gammeldags julgranskulor är handgjorda av papier-maché och har en unik vintagekänsla. Varje kula är ett konstverk i sig, med detaljrik finish som ger din julgran en klassisk och nostalgisk charm. Säljs i en förpackning om 3 kulor.",
     "reviews": {
-      "average_rating": 4.5,
-      "total_reviews": 32
+      "average_rating": 4.9,
+      "total_reviews": 59
     }
   }
 ]
