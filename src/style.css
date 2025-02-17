@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundläggande reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  height: 100%;
+}
+
+article {
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #926f34;
+}
+
+h2 {
+  color: #926f34;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a:focus-visible {
+  outline: 2px solid #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 80px; /* Karusell bredd för mobil */
+}
+
+.shop-button {
+  /*   display: inline-block;
+ */
+  padding: 0.65rem 1.15rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulserande effekt vid hover */
+.shop-button:hover {
+  background: linear-gradient(135deg, #dfbd69, #926f34 50%, #d8cba9 100%);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+/* Klick-animation */
+.shop-button:active {
+  transform: scale(0.95); /* Minskar storleken något vid klick */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Mörkare skugga */
+  animation: click-effect 0.3s ease-in-out;
+}
+
+.product-card .shop-button {
+  position: absolute;
+  top: 0; /* Placera 2rem från botten av product-card */
+  right: 0; /* Centrerad horisontellt */
+}
+
+section.main-content {
+  padding: 2rem 4rem;
+}
+
+/* Pulserande animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05); /* Växer något */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Animation vid klick */
+@keyframes click-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Minskar storleken lite mer */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Products Container */
+.products-container {
+  padding: 2rem;
+}
+
+body .light-theme {
+  background-color: white;
+}
+
+/* Grid layout för produktbilder */
+.image-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.image-grid {
+  grid-template-columns: 1fr; /* 2 kolumn för mobil */
+  gap: 7rem;
+}
+
+/* Thumbnail styling */
+.image-item img {
+  min-width: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: contain; /* Ser till att bilden behåller sitt bildförhållande */
+  display: block;
+  margin: auto;
+}
+
+/* Caption styling */
+.image-caption {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #555;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+/* .about-section {
+  padding: 3rem 7rem;
+} */
+
+/* .about-section h1 {
+  color: #926f34;
+  margin-bottom: 2rem;
+} */
+
+.about-section h2 {
+  font-size: 1.5rem;
+  color: #926f34;
+  margin-top: 1rem;
+}
+
+ul {
+  padding: 0.5rem 2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Två kolumner för större skärmar*/
+.two-columns {
+  column-count: 1; /* Antal kolumner */
+}
+
+.two-columns p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333; /* Mörk text */
+  margin-bottom: 1rem;
+}
+
+.two-columns h2 {
+  break-before: column; /* Börja rubriker på ny kolumn om nödvändigt */
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); /* 3 kolumner för tablet */
+  }
+  section.main-content {
+    padding: 3rem 5rem;
+  }
+
+  #image-carousel {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 3fr); /* 2 kolumner för tablet */
+  }
+  .two-columns {
+    column-count: 2; /* Antal kolumner */
+    column-gap: 7rem; /* Mellanrum mellan kolumnerna */
+  }
+  section.main-content {
+    padding: 3.5rem 6rem;
+  }
+  #image-carousel {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 2fr); /* 3 kolumner för laptop */
+  }
+
+  /* Två kolumner */
+  .two-columns {
+    column-count: 2; /* Antal kolumner */
+    column-gap: 7rem; /* Mellanrum mellan kolumnerna */
+  }
+  section.main-content {
+    padding: 4rem 7rem;
+  }
+  #image-carousel {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    /*Set max-width to prevent layout growth > 1600px*/
+    max-width: 1600px;
+    margin: 0 auto; /* Center the content */
+  }
+  .image-grid {
+    grid-template-columns: repeat(3, 2fr); /* 3 kolumner för laptop */
+  }
+  /* Två kolumner */
+  .two-columns {
+    column-count: 2; /* Antal kolumner */
+    column-gap: 7rem; /* Mellanrum mellan kolumnerna */
+  }
+
+  section.main-content {
+    padding: 4rem 7rem;
+  }
+  #image-carousel {
+    padding-top: 0;
+  }
+}

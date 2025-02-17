@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakta oss på Ljus & Gemenskap AB för frågor om våra produkter och samhällsansvar. Vi hjälper gärna till."
+    />
+    <meta name="author" content="Ljus & Gemenskap AB" />
+    <meta name="robots" content="index, follow" />
+    <!-- Preload header CSS -->
+    <link
+      rel="preload"
+      href="src/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/header.css" />
+    </noscript>
+    <!-- Preload general CSS style -->
+    <link
+      rel="preload"
+      href="src/shop.css"
+      as="style"
+      type="text/css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/shop.css" type="text/css" />
+    </noscript>
+    <title>DT200G Moment 4 | Min webshop</title>
+  </head>
+  <body class="wrapper julshop-page">
+    <div>
+      <header class="main-header">
+        <div class="logo-container">
+          <img
+            src="src/images/logo.svg"
+            alt="Ljus & Gemenskap AB"
+            class="logo"
+            width="25"
+            height="50"
+          />
+          <a href="index.html"><p class="company-name">Ljus & Gemenskap</p></a>
+        </div>
+        <button class="hamburger-menu" aria-label="Öppna meny">☰</button>
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="#shop" class="active shop-button">Julshop</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </nav>
+        <div class="bag">
+          <a href="checkout.html">
+            <img
+              src="src/images/shoppingbag.svg"
+              alt=""
+              width="30"
+              height="35" /><span id="small-basket"></span
+          ></a>
+        </div>
+      </header>
+      <section class="categoriescontainer">
+        <h1>Julshop som gör dubbel nytta</h1>
+        <div class="categories-row">
+          <h2>Kategorier</h2>
+          <div>
+            <div id="categories">
+              <nav>
+                <ul></ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="video-container">
+        <div class="video-overlay"></div>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="background-video"
+          aria-label="En bakgrundsvideo med en julgran som visas i full bredd och täcker hela skärmen"
+        >
+          <!-- Högupplöst WebM-version -->
+          <source src="src/videos/christmastree-bkg.webm" type="video/webm" />
+
+          <!-- MP4 fallback -->
+          <source src="src/videos/christmastree-bkg.mp4" type="video/mp4" />
+
+          <!-- Meddelande för äldre webbläsare -->
+          Din webbläsare stödjer inte videoelementet.
+        </video>
+      </div>
+      <div class="products-container">
+        <div class="product-images"></div>
+      </div>
+    </div>
+    <script src="src/header.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/webshop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "articleid": "a00001",
+    "name": "Julgransstjärna",
+    "price": 399,
+    "pack_size": 1,
+    "category": "Julgranspynt",
+    "images": {
+      "webp": "src/productimages/a00001-250x250.webp",
+      "jpeg": "src/productimages/a00001-250x250.jpg",
+      "thumbnail": "src/productimages/a00001-thumbnail.jpg",
+      "modal": "src/productimages/a00001-800x800.webp"
+    },
+    "alttext": "Vi smyckar julgranen med en stor stjärna",
+    "link": "product-1.html",
+    "aria-label": "Läs mer om Produkt 1",
+    "description": "Denna vackra julgransstjärna i metall blir den perfekta pricken över i:et på din julgran. Med sin imponerande storlek och glänsande yta sprider den ett varmt och festligt ljus som symboliserar julens magi.",
+    "reviews": {
+      "average_rating": 4.5,
+      "total_reviews": 32
+    }
+  },
+  {
+    "articleid": "a00002",
+    "name": "Adventsljusstake i trä",
+    "price": 799,
+    "pack_size": 1,
+    "category": "Julstämning",
+    "images": {
+      "webp": "src/productimages/a00002-250x250.webp",
+      "jpeg": "src/productimages/a00002-250x250.jpg",
+      "thumbnail": "src/productimages/a00002-thumbnail.jpg",
+      "modal": "src/productimages/a00002-800x800.webp"
+    },
+    "alttext": "När mörkret kommer tänder vi den här 7-armade adventsljusstaken",
+    "link": "product-2.html",
+    "aria-label": "Läs mer om Produkt 2",
+    "description": "Denna vackra och eleganta klassiska 7-armade adventsljusstake i trä, sprider ett varmt ljus under hela december.",
+    "reviews": {
+      "average_rating": 4.5,
+      "total_reviews": 32
+    }
+  },
+  {
+    "articleid": "a00003",
+    "name": "Röda julgranskulor",
+    "price": 129,
+    "pack_size": 4,
+    "category": "Julgranspynt",
+    "images": {
+      "webp": "src/productimages/a00003-250x250.webp",
+      "jpeg": "src/productimages/a00003-250x250.jpg",
+      "thumbnail": "src/productimages/a00003-thumbnail.jpg",
+      "modal": "src/productimages/a00003-800x800.webp"
+    },
+    "alttext": "Vi smyckar julgranen med röda blänkande julgranskulor",
+    "link": "product-3.html",
+    "aria-label": "Gå till produktsidan för de röda julgranskulorna",
+    "description": "De röda julgranskulorna ger din julgran en traditionell och elegant touch. Dessa glittrande kulor reflekterar ljuset vackert och skapar en festlig stämning i hemmet. Säljs i en praktisk förpackning om 4 stycken.",
+    "reviews": {
+      "average_rating": 4.5,
+      "total_reviews": 32
+    }
+  },
+  {
+    "articleid": "a00004",
+    "name": "Kristallstjärnor",
+    "price": 699,
+    "pack_size": 1,
+    "category": "Julgranspynt",
+    "images": {
+      "webp": "src/productimages/a00004-250x250.webp",
+      "jpeg": "src/productimages/a00004-250x250.jpg",
+      "thumbnail": "src/productimages/a00004-thumbnail.jpg",
+      "modal": "src/productimages/a00004-800x800.webp"
+    },
+    "alttext": "Vi smyckar julgranen med exklusiva stjärnor av kristall",
+    "link": "product-4.html",
+    "aria-label": "Gå till produktsidan för kristallstjärnorna",
+    "description": "Dekorera din julgran med dessa exklusiva kristallstjärnor. Deras glittrande yta fångar ljuset på ett magiskt sätt och tillför en touch av elegans och lyx till julpyntet. Perfekta för en stilfull julgran.",
+    "reviews": {
+      "average_rating": 4.5,
+      "total_reviews": 32
+    }
+  },
+  {
+    "articleid": "a00005",
+    "name": "Gammeldags julgranskulor",
+    "price": 199,
+    "pack_size": 3,
+    "category": "Julgranspynt",
+    "images": {
+      "webp": "src/productimages/a00005-250x250.webp",
+      "jpeg": "src/productimages/a00005-250x250.jpg",
+      "thumbnail": "src/productimages/a00005-thumbnail.jpg",
+      "modal": "src/productimages/a00005-800x800.webp"
+    },
+    "alttext": "Vi smyckar julgranen med gammeldags julgranskulor",
+    "link": "product-5.html",
+    "aria-label": "Gå till produktsidan för de gammeldags julgranskulorna",
+    "description": "Dessa gammeldags julgranskulor är handgjorda av papier-maché och har en unik vintagekänsla. Varje kula är ett konstverk i sig, med detaljrik finish som ger din julgran en klassisk och nostalgisk charm. Säljs i en förpackning om 3 kulor.",
+    "reviews": {
+      "average_rating": 4.5,
+      "total_reviews": 32
+    }
+  }
+]

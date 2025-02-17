@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundläggande reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2rem;
+}
+
+.shop-button {
+  /* display: inline-block; */
+  padding: 0.65rem 1.15rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulserande effekt vid hover */
+.shop-button:hover {
+  background: linear-gradient(135deg, #dfbd69, #926f34 50%, #d8cba9 100%);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+/* Klick-animation */
+.shop-button:active {
+  transform: scale(0.95); /* Minskar storleken något vid klick */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Mörkare skugga */
+  animation: click-effect 0.3s ease-in-out;
+}
+
+.product-card .shop-button {
+  position: absolute;
+  top: 0; /* Placera 2rem från botten av product-card */
+  right: 0; /* Centrerad horisontellt */
+}
+
+/* Pulserande animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05); /* Växer något */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Animation vid klick */
+@keyframes click-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Minskar storleken lite mer */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#checkout img {
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+*/
+
+/* Tabellstil */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+thead td {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+tbody td {
+  font-size: 0.8rem;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 1rem; /* Padding för text */
+  text-align: left; /* Vänsterställd text */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Ljus bakgrund för varannan rad */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Effekt vid hovring */
+}
+
+/* Pulserande animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05); /* Växer något */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Animation vid klick */
+@keyframes click-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Minskar storleken lite mer */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1600px) {
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .image-grid {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  /* Två kolumner */
+  .two-columns {
+    column-count: 2;
+    column-gap: 7rem;
+  }
+
+  section.main-content {
+    padding: 7rem 10rem;
+  }
+  section {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .image-grid {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  /* Två kolumner */
+  .two-columns {
+    column-count: 2;
+    column-gap: 7rem;
+  }
+
+  section.main-content {
+    padding: 7rem 10rem;
+  }
+  section {
+    padding: 5rem;
+  }
+}

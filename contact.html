@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakta oss på Ljus & Gemenskap AB för frågor om våra produkter och samhällsansvar. Vi hjälper gärna till."
+    />
+    <meta name="author" content="Ljus & Gemenskap AB" />
+    <meta name="robots" content="index, follow" />
+    <!-- Preload header CSS -->
+    <link
+      rel="preload"
+      href="src/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/header.css" />
+    </noscript>
+    <!-- Preload general CSS style -->
+    <link
+      rel="preload"
+      href="src/shop.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/shop.css" />
+    </noscript>
+
+    <title>Kontakta oss - Ljus & Gemenskap AB</title>
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
+    <!-- Ladda footer CSS när sidan är helt laddad -->
+    <link
+      id="footer-style"
+      rel="stylesheet"
+      href="src/footer.css"
+      media="all"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+  </head>
+
+  <body class="wrapper light-theme">
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            src="src/images/logo.svg"
+            alt="Ljus & Gemenskap AB"
+            class="logo"
+            width="25"
+            height="50"
+          />
+        </a>
+        <a href="index.html"><p class="company-name">Ljus & Gemenskap</p></a>
+      </div>
+      <button class="hamburger-menu" aria-label="Öppna meny">☰</button>
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="shop.html">Julshop</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li>
+            <a href="#contact" class="active shop-button">Kontakta oss</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="contact-page">
+      <section class="contact-section">
+        <h1>Kontakta oss</h1>
+
+        <p>
+          Vi på Ljus & Gemenskap AB värdesätter alla våra kunder och samarbeten.
+          Har du några frågor om våra produkter eller vårt arbete för
+          samhällsansvar? Tveka inte att kontakta oss – vi är här för att
+          hjälpa!
+        </p>
+
+        <h2>Våra kontaktuppgifter</h2>
+
+        <address>
+          <ul>
+            <li>
+              <strong>Telefon</strong>
+              <a href="tel:+46123456789">+46 123 456 789</a>
+            </li>
+            <li>
+              <strong>E-post</strong>
+              <a href="mailto:info@ljusochgemenskap.se"
+                >info@ljusochgemenskap.se</a
+              >
+            </li>
+            <li>
+              <strong>Besöksadress</strong> Ljus & Gemenskap AB, Storgatan 12,
+              123 45 Stockholm
+            </li>
+          </ul>
+        </address>
+
+        <h2 id="contact-form-title">Kontakta oss via formuläret</h2>
+        <form
+          action="/submit-form"
+          method="POST"
+          id="contact-form"
+          aria-labelledby="contact-form-title"
+        >
+          <div>
+            <label for="name">Namn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+              placeholder="Ditt namn"
+            />
+          </div>
+          <div>
+            <label for="email">E-post</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              placeholder="Din e-postadress"
+            />
+          </div>
+          <div>
+            <label for="message">Meddelande</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-required="true"
+              placeholder="Skriv ditt meddelande här"
+            ></textarea>
+          </div>
+
+          <!-- Privacy and Consent -->
+          <div class="privacy-container">
+            <label for="privacy-consent">
+              <input
+                type="checkbox"
+                id="privacy-consent"
+                name="privacy-consent"
+                required
+              />
+              <span
+                >Jag samtycker till att mina personuppgifter behandlas enligt
+                <a href="privacy-policy.html" target="_blank"
+                  >integritetspolicyn</a
+                >.
+              </span>
+            </label>
+          </div>
+
+          <button class="shop-button" type="submit">Skicka meddelande</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <!-- Kontaktinformation -->
+        <section class="footer-contact">
+          <h2>Kontakta oss</h2>
+          <ul>
+            <li>
+              <strong>Telefon:</strong>
+              <a href="tel:+46123456789">+46 123 456 789</a>
+            </li>
+            <li>
+              <strong>E-post:</strong>
+              <a href="mailto:info@ljusochgemenskap.se"
+                >info@ljusochgemenskap.se</a
+              >
+            </li>
+            <li>
+              <strong>Besöksadress:</strong> Storgatan 12, 123 45 Stockholm,
+              Sverige
+            </li>
+          </ul>
+        </section>
+
+        <!-- Företagsinformation -->
+        <section class="footer-info">
+          <h2>Företagsinformation</h2>
+          <ul>
+            <li><strong>Företagsnamn</strong> Ljus & Gemenskap AB</li>
+            <li><strong>Organisationsnummer</strong> 556789-1234</li>
+            <li>
+              <strong>Vårt uppdrag</strong> Att främja samhällsansvar genom
+              hållbara produkter och positiva förändringar.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Sociala Medie-länkar -->
+        <section class="footer-social">
+          <h2>Följ oss på sociala medier</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Copyright Information -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ljus & Gemenskap AB. Alla rättigheter reserverade.</p>
+      </div>
+    </footer>
+    <script src="src/header.js"></script>
+  </body>
+</html>

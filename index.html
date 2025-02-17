@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakta oss på Ljus & Gemenskap AB för frågor om våra produkter och samhällsansvar. Vi hjälper gärna till."
+    />
+    <meta name="author" content="Ljus & Gemenskap AB" />
+    <meta name="robots" content="index, follow" />
+    <!-- Preload header CSS -->
+    <link
+      rel="preload"
+      href="src/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/header.css" />
+    </noscript>
+    <!-- Preload general CSS style -->
+    <link
+      rel="preload"
+      href="src/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/style.css" />
+    </noscript>
+
+    <!-- Preload Lightbox CSS -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback Lightbox css for older web browsers -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+      />
+    </noscript>
+    <title>DT200G Moment 4 | Min webshops webbplats</title>
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
+    <!-- Ladda footer CSS när sidan är helt laddad -->
+    <link
+      id="footer-style"
+      rel="stylesheet"
+      href="src/footer.css"
+      media="all"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="wrapper">
+    <div>
+      <header class="main-header">
+        <div class="logo-container">
+          <img
+            src="src/images/logo.svg"
+            alt="Ljus & Gemenskap AB"
+            class="logo"
+            width="25"
+            height="50"
+          />
+          <a href="index.html"><p class="company-name">Ljus & Gemenskap</p></a>
+        </div>
+        <button class="hamburger-menu" aria-label="Öppna meny">☰</button>
+        <nav class="navbar-container">
+          <ul class="navbar">
+            <li><a href="#index" class="active shop-button">Hem</a></li>
+            <li><a href="shop.html">Julshop</a></li>
+            <li><a href="about.html">Om oss</a></li>
+            <li><a href="contact.html">Kontakta oss</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="main-content">
+          <h1>Välkomna till Ljus & Gemenskap</h1>
+          <article>
+            <h2>Vi vill lysa upp i mörkret</h2>
+            <div class="two-columns">
+              <p>
+                Ljus & Gemenskap grundades med en enkel men kraftfull vision:
+                att skapa en ljusare värld genom hållbara produkter som gör
+                skillnad. Vi erbjuder kvalitetsprodukter som inte bara sprider
+                värme och ljus, utan som också stödjer initiativ som förbättrar
+                samhället och miljön. Hos oss får du chansen att göra något
+                gott, samtidigt som du får hem vackra och användbara produkter
+              </p>
+              <p>Vår julshop är mer än bara en butik för julen.</p>
+              <p>
+                Vår julshop är en flexibel lösning som anpassar sig efter
+                säsongen och våra kunders behov. När julen är över förvandlas
+                vår shop till en inspirerande plats för andra högtider och
+                årstider. Produkterna byts ut och designen uppdateras för att
+                spegla vårens, sommarens och höstens stämningar och teman. Vi
+                kallar det en "smart shop" eftersom den är lika dynamisk som
+                våra kunders behov. Oavsett om du letar efter mysiga
+                vinterdekorationer, fräscha vårdetaljer eller något unikt för
+                sommaren, hittar du det hos oss.
+              </p>
+            </div>
+          </article>
+          <article>
+            <h2>Vi gör dubbel nytta för alla</h2>
+            <div class="two-columns">
+              <p>
+                För varje köp bidrar du till viktiga samhällsprojekt, lokalt och
+                globalt:
+              </p>
+              <ul>
+                <li>
+                  Hantverk och dekorationer är Designade för att hålla i
+                  generationer.
+                </li>
+                <li>Ljusstakarna är tillverkade av miljövänliga material.</li>
+                <li>
+                  Julstämning för att sprida glädje under årets mörkaste
+                  månader.
+                </li>
+              </ul>
+              <p>När du handlar hos oss stödjer du samhällsinitiativ som:</p>
+              <ul>
+                <li>Hjälp till behövande familjer</li>
+                <li>Stöd till lokala ungdomsverksamheter.</li>
+                <li>
+                  Miljöprojekt som främjar hållbarhet och biologisk mångfald.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <section id="image-carousel" class="main-content">
+          <h1>Våra senaste tillagda produkter i julshopen</h1>
+          <div id="prod-images" class="image-grid">
+            <div class="image-item">
+              <a
+                href="src/productimages/a00001-800x800.webp"
+                target="_blank"
+                data-lightbox="productimages"
+                data-title="Produkt1"
+              >
+                <picture>
+                  <!-- Modern format: AVIF -->
+                  <source
+                    srcset="src/productimages/a00001-250x250.avif"
+                    type="image/avif"
+                  />
+                  <!-- Alternativ: WebP -->
+                  <source
+                    srcset="src/productimages/a00001-250x250.webp"
+                    type="image/webp"
+                  />
+                  <!-- Fallback: JPG -->
+                  <img
+                    src="src/productimages/a00001-250x250.jpg"
+                    alt="Produkt1"
+                    width="250"
+                    height="250"
+                  />
+                </picture>
+              </a>
+              <div class="image-caption">
+                Denna vackra julgransstjärna i metall blir den perfekta pricken
+                över i:et på din julgran.
+              </div>
+            </div>
+            <div class="image-item">
+              <a
+                href="src/productimages/a00002-800x800.webp"
+                target="_blank"
+                data-lightbox="productimages"
+                data-title="Produkt1"
+              >
+                <picture>
+                  <!-- Modern format: AVIF -->
+                  <source
+                    srcset="src/productimages/a00002-250x250.avif"
+                    type="image/avif"
+                  />
+                  <!-- Alternativ: WebP -->
+                  <source
+                    srcset="src/productimages/a00002-250x250.webp"
+                    type="image/webp"
+                  />
+                  <!-- Fallback: JPG -->
+                  <img
+                    src="src/productimages/a00002-250x250.jpg"
+                    alt="Produkt1"
+                    width="250"
+                    height="250"
+                  />
+                </picture>
+              </a>
+              <div class="image-caption">
+                Denna vackra och eleganta klassiska 7-armade adventsljusstake i
+                trä, sprider ett varmt ljus under hela december.
+              </div>
+            </div>
+            <div class="image-item">
+              <a
+                href="src/productimages/a00003-800x800.webp"
+                target="_blank"
+                data-lightbox="productimages"
+                data-title="Produkt1"
+              >
+                <picture>
+                  <!-- Modern format: AVIF -->
+                  <source
+                    srcset="src/productimages/a00003-250x250.avif"
+                    type="image/avif"
+                  />
+                  <!-- Alternativ: WebP -->
+                  <source
+                    srcset="src/productimages/a00003-250x250.webp"
+                    type="image/webp"
+                  />
+                  <!-- Fallback: JPG -->
+                  <img
+                    src="src/productimages/a00003-250x250.jpg"
+                    alt="Produkt1"
+                    width="250"
+                    height="250"
+                  />
+                </picture>
+              </a>
+              <div class="image-caption">
+                De röda julgranskulorna ger din julgran en traditionell och
+                elegant touch.
+              </div>
+            </div>
+            <div class="image-item">
+              <a
+                href="src/productimages/a00004-800x800.webp"
+                target="_blank"
+                data-lightbox="productimages"
+                data-title="Produkt1"
+              >
+                <picture>
+                  <!-- Modern format: AVIF -->
+                  <source
+                    srcset="src/productimages/a00004-250x250.avif"
+                    type="image/avif"
+                  />
+                  <!-- Alternativ: WebP -->
+                  <source
+                    srcset="src/productimages/a00004-250x250.webp"
+                    type="image/webp"
+                  />
+                  <!-- Fallback: JPG -->
+                  <img
+                    src="src/productimages/a00004-250x250.jpg"
+                    alt="Produkt1"
+                    width="250"
+                    height="250"
+                  />
+                </picture>
+              </a>
+              <div class="image-caption">
+                Dekorera din julgran med dessa exklusiva kristallstjärnor.
+                Perfekta för en stilfull julgran.
+              </div>
+            </div>
+            <div class="image-item">
+              <a
+                href="src/productimages/a00005-800x800.webp"
+                target="_blank"
+                data-lightbox="productimages"
+                data-title="Produkt1"
+              >
+                <picture>
+                  <!-- Modern format: AVIF -->
+                  <source
+                    srcset="src/productimages/a00005-250x250.avif"
+                    type="image/avif"
+                  />
+                  <!-- Alternativ: WebP -->
+                  <source
+                    srcset="src/productimages/a00005-250x250.webp"
+                    type="image/webp"
+                  />
+                  <!-- Fallback: JPG -->
+                  <img
+                    src="src/productimages/a00005-250x250.jpg"
+                    alt="Produkt1"
+                    width="250"
+                    height="250"
+                  />
+                </picture>
+              </a>
+              <div class="image-caption">
+                Dessa gammeldags julgranskulor är handgjorda av papier-maché och
+                har en unik vintagekänsla.
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="footer-content">
+            <!-- Kontaktinformation -->
+            <section class="footer-contact">
+              <h2>Kontakta oss</h2>
+              <ul>
+                <li>
+                  <strong>Telefon:</strong>
+                  <a href="tel:+46123456789">+46 123 456 789</a>
+                </li>
+                <li>
+                  <strong>E-post:</strong>
+                  <a href="mailto:info@ljusochgemenskap.se"
+                    >info@ljusochgemenskap.se</a
+                  >
+                </li>
+                <li>
+                  <strong>Besöksadress:</strong> Storgatan 12, 123 45 Stockholm,
+                  Sverige
+                </li>
+              </ul>
+            </section>
+
+            <!-- Företagsinformation -->
+            <section class="footer-info">
+              <h2>Företagsinformation</h2>
+              <ul>
+                <li><strong>Företagsnamn</strong> Ljus & Gemenskap AB</li>
+                <li><strong>Organisationsnummer</strong> 556789-1234</li>
+                <li>
+                  <strong>Vårt uppdrag</strong> Att främja samhällsansvar genom
+                  hållbara produkter och positiva förändringar.
+                </li>
+              </ul>
+            </section>
+            <!-- Sociala Medie-länkar -->
+            <section class="footer-social">
+              <h2>Följ oss på sociala medier</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/ljusochgemenskap"
+                    target="_blank"
+                    aria-label="Facebook"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/ljusochgemenskap"
+                    target="_blank"
+                    aria-label="Twitter"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/ljusochgemenskap"
+                    target="_blank"
+                    aria-label="Instagram"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Copyright Information -->
+          <div class="footer-bottom">
+            <p>
+              &copy; 2024 Ljus & Gemenskap AB. Alla rättigheter reserverade.
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="src/header.js"></script>
+  </body>
+</html>

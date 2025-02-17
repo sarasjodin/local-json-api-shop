@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundläggande reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  height: 100%;
+}
+
+.dark-theme {
+  background-color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.75rem 0;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem 0;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: black;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #333;
+  color: white;
+}
+
+.shop-button {
+  /* display: inline-block; */
+  padding: 0.65rem 1.15rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulserande effekt vid hover */
+.shop-button:hover {
+  background: linear-gradient(135deg, #dfbd69, #926f34 50%, #d8cba9 100%);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  animation: pulse 1.5s infinite;
+  color: black;
+}
+
+/* Klick-animation */
+.shop-button.active {
+  transform: scale(0.95); /* Minskar storleken något vid klick */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Mörkare skugga */
+  animation: click-effect 0.3s ease-in-out;
+}
+
+.product-card .shop-button {
+  position: absolute;
+  top: 0; /* Placera 2rem från botten av product-card */
+  right: 0; /* Centrerad horisontellt */
+}
+
+/* Pulserande animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05); /* Växer något */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Animation vid klick */
+@keyframes click-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* Minskar storleken lite mer */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  padding-right: 1rem;
+}
+
+.logo {
+  /*   margin-right: 1rem; */
+  width: 50px;
+  height: auto;
+}
+
+.bag img {
+  margin-right: 1rem;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  padding: 1rem;
+}
+
+.navbar-container {
+  display: none; /* Dölj menyn som standard */
+  position: absolute; /* Placera menyn över resten av sidan */
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0); /* Bakgrund med transparens */
+  z-index: 5; /* Lägger den över allt annat */
+  flex-direction: column; /* Vertikal meny */
+  align-items: center; /* Centrerar menyerna */
+  justify-content: center; /* Centrerar menyerna vertikalt */
+  gap: 0.5rem; /* Lägg till lite mellanrum */
+  padding: 2rem 1rem; /* Lägg till padding för utrymme */
+}
+
+.navbar-container.show {
+  display: flex; /* Visa menyn när klassen 'show' läggs till */
+  flex-direction: column; /* Lista menyn vertikalt */
+  gap: 1rem; /* Lägger till avstånd mellan menyerna */
+  padding: 1rem 6rem; /* Valfritt: Lägger till padding runt menyn */
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Vertikal meny */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.navbar li {
+  padding: 10px 15px;
+}
+
+ul.navbar:hover li:hover {
+  background-color: #555;
+}
+
+.navbar a {
+  color: white; /* Vit text */
+  text-decoration: none; /* Ingen understrykning */
+  padding: 0.5rem 1rem; /* Lägg till padding för klickvänlighet */
+  border-radius: 4px; /* Rundade hörn för visuell estetik */
+  transition: all 0.3s ease; /* För mjuka övergångar */
+  display: block;
+  z-index: 10; /* Lägger den över allt annat */
+}
+
+.navbar a:hover {
+  background-color: #555; /* Ljusare grå vid hover */
+  color: #dfbd69; /* Guld vid hover */
+}
+
+.navbar a.active {
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  color: #333; /* Mörk text för kontrast mot guld */
+  font-weight: bold; /* Tydligare vikt */
+  border: 2px solid #dfbd69; /* Guldaktig kant för bättre avgränsning */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* Liten skugga för text */
+}
+
+.navbar a.active:hover {
+  color: black;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* Liten skugga för text */
+}
+
+/* Dropdown Meny */
+.dropdown {
+  position: relative; /* För att positionera dropdown-menyn */
+}
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* Placera precis under föräldraelementet */
+  left: 0;
+  display: none; /* Dölj menyn som standard */
+  background-color: #333;
+  padding: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: white;
+  background-color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+/* Visa dropdown-menyn vid hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hamburgermeny specifikt för Julshop-sidan */
+.julshop-page .hamburger-menu {
+  position: absolute;
+  top: 50%; /* Vertikalt centrerad */
+  transform: translateY(-50%); /* Justerar för korrekt centrering */
+  left: 1rem; /* Placera till vänster med lite padding */
+}
+
+/* Justering av shop-ikonen på Julshop-sidan */
+.julshop-page .bag {
+  top: 50%; /* Vertikalt centrerad */
+  transform: translateY(-50%);
+  right: 1rem; /* Placera till höger med lite padding */
+}
+
+/* Products Container */
+.products-container {
+  padding: 2rem;
+}
+
+.product-images {
+  display: grid;
+  grid-template-columns: 1fr; /* En kolumn som fyller hela bredden */
+  gap: 1rem;
+}
+
+.product-card {
+  position: relative; /* Gör kortet till referens för absolut positionerade element */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%; /* Gör bilderna runda */
+  margin-bottom: 1rem;
+}
+
+/* Produktkort */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .company-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .company-name {
+    font-size: 1.6rem;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row; /* Lägg länkarna horisontellt */
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .wrapper {
+    /*Set max-width to prevent layout growth > 1600px*/
+    max-width: 1600px;
+    margin: 0 auto; /* Center the content */
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Lägg länkarna horisontellt */
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+
+  .company-name {
+    font-size: 2rem;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: row; /* Lägg länkarna horisontellt */
+    gap: 1rem;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+}

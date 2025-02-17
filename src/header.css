@@ -1,0 +1,396 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grundläggande reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  height: 100%;
+}
+
+.company-name {
+  display: none;
+}
+
+.logo-container > a:nth-child(2) {
+  text-decoration: none;
+}
+
+.main-header {
+  display: grid;
+  grid-template-areas:
+    'logo'
+    'menu';
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.logo-container {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.hamburger-menu {
+  grid-area: menu;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin-left: 3rem;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navbar-container {
+  grid-area: menu;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:active {
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+}
+
+.navbar a:hover {
+  color: #dfbd69; /* Guld vid hover */
+  transition: all 0.3s ease; /* För mjuka övergångar */
+}
+
+.navbar a.active:hover {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* Liten skugga för text */
+}
+
+/* Cart icon styling (för shoppen) */
+.julshop-subpage .bag,
+.julshop-page .bag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.julshop-subpage .bag img,
+.julshop-page .bag img {
+  width: 30px;
+  height: 35px;
+}
+
+.main-header {
+  grid-template-areas: 'logo menu';
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.julshop-subpage .main-header,
+.julshop-page .main-header {
+  grid-template-areas: 'logo menu cart';
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.julshop-subpage .navbar-container,
+.julshop-page .navbar-container {
+  display: none;
+}
+
+.julshop-subpage .navbar-container.show,
+.julshop-page .navbar-container.show {
+  display: flex; /* Visa horisontell meny */
+  flex-direction: column; /* Vertikal meny */
+  justify-content: flex-end;
+  gap: 2rem;
+  background-color: rgba(85, 85, 85, 0.95);
+}
+
+.navbar-container {
+  display: flex;
+  position: fixed;
+  top: 5.1rem;
+  left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  background-color: #555;
+  z-index: 5;
+}
+
+.navbar-container {
+  display: none;
+}
+
+.navbar-container.show {
+  display: flex; /* Visa horisontell meny */
+  flex-direction: column; /* Vertikal meny */
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+/* .shop-button {
+  display: inline-block;
+  padding: 0.65rem 1.15rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.shop-button:hover {
+  background: linear-gradient(135deg, #dfbd69, #926f34 50%, #d8cba9 100%);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  animation: pulse 1.5s infinite;
+  color: black;
+} */
+
+.shop-button {
+  background: linear-gradient(135deg, #d8cba9, #dfbd69 50%, #926f34 100%);
+  transition: all 0.3s ease;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+.shop-button:hover {
+  background: linear-gradient(135deg, #dfbd69, #926f34 50%, #d8cba9 100%);
+  /* box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); */
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Klick-animation */
+/* .shop-button.active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  animation: click-effect 0.3s ease-in-out;
+} */
+
+/* Pulserande animation */
+/* @keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+} */
+
+/* Animation vid klick */
+/* @keyframes click-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+#small-basket {
+  padding-left: 10px;
+  color: white;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .main-header {
+    grid-template-areas: 'menu logo';
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .julshop-subpage .main-header,
+  .julshop-page .main-header {
+    grid-template-areas: 'menu logo cart';
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .company-name {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none; /* Dölj hamburgermenyn */
+  }
+
+  .main-header {
+    grid-template-areas: 'logo menu';
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  /* Laptop styling för shoppen */
+  .julshop-subpage .main-header,
+  .julshop-page .main-header {
+    grid-template-areas: 'logo name menu cart';
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .navbar,
+  .julshop-page .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .bag,
+  .julshop-page .bag {
+    grid-area: cart; /* Högerställd cart */
+  }
+
+  .julshop-subpage .navbar-container,
+  .julshop-page .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+
+  .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .company-name {
+    display: block; /* Visa produktnamnet */
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .hamburger-menu {
+    display: none; /* Dölj hamburgermenyn */
+  }
+
+  .main-header {
+    grid-template-areas: 'logo menu';
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  /* Laptop styling för shoppen */
+  .julshop-subpage .main-header,
+  .julshop-page .main-header {
+    grid-template-areas: 'logo name menu cart';
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .navbar,
+  .julshop-page .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .bag,
+  .julshop-page .bag {
+    grid-area: cart; /* Högerställd cart */
+  }
+
+  .julshop-subpage .navbar-container,
+  .julshop-page .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+
+  .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakta oss på Ljus & Gemenskap AB för frågor om våra produkter och samhällsansvar. Vi hjälper gärna till."
+    />
+    <meta name="author" content="Ljus & Gemenskap AB" />
+    <meta name="robots" content="index, follow" />
+    <!-- Preload header CSS -->
+    <link
+      rel="preload"
+      href="src/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/header.css" />
+    </noscript>
+    <!-- Preload general CSS style -->
+    <link
+      rel="preload"
+      href="src/product.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/product.css" />
+    </noscript>
+
+    <title>Kassa - Grön och Glädje AB</title>
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
+    <!-- Ladda footer CSS när sidan är helt laddad -->
+    <link
+      id="footer-style"
+      rel="stylesheet"
+      href="src/footer.css"
+      media="all"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+  </head>
+
+  <body class="wrapper julshop-subpage">
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            src="src/images/logo.svg"
+            alt="Ljus & Gemenskap AB"
+            class="logo"
+            width="25"
+            height="50"
+          />
+        </a>
+        <a href="index.html"><p class="company-name">Ljus & Gemenskap</p></a>
+      </div>
+      <button class="hamburger-menu" aria-label="Öppna meny">☰</button>
+      <nav class="navbar-container">
+        <ul class="navbar">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="shop.html" class="active shop-button">Julshop</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </nav>
+      <div class="bag">
+        <a href="checkout.html">
+          <img
+            src="src/images/shoppingbag.svg"
+            alt=""
+            width="30"
+            height="35" /><span id="small-basket"></span
+        ></a>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="wrapper">
+      <section class="product-details">
+        <div class="product-image-container">
+          <img
+            src="src/productimages/a00004-175x175.webp"
+            alt="Vi smyckar julgranen med exklusiva stjärnor av kristall"
+            class="product-image"
+          />
+        </div>
+        <div class="product-info">
+          <h1 class="product-name">Kristallstjärnor</h1>
+          <p class="product-category">Kategori: Julgranspynt</p>
+          <p class="product-description">
+            Dekorera din julgran med dessa exklusiva kristallstjärnor. Deras
+            glittrande yta fångar ljuset på ett magiskt sätt och tillför en
+            touch av elegans och lyx till julpyntet. Perfekta för en stilfull
+            julgran.
+          </p>
+          <p class="product-price">Pris: 699 SEK</p>
+          <div>
+            <button
+              class="shop-button"
+              onclick="addToBasket(this, 'a00004', 'Kristallstjärnor', 699, 'src/productimages/a00004-thumbnail.jpg', true)"
+            >
+              Lägg i varukorgen
+            </button>
+            <button class="shop-button" onclick="checkoutBasket()">
+              Slutför köp
+            </button>
+          </div>
+          <p class="product-reviews">Betyg: 4.5/5 (32 recensioner)</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <!-- Kontaktinformation -->
+        <section class="footer-contact">
+          <h2>Kontakta oss</h2>
+          <ul>
+            <li>
+              <strong>Telefon:</strong>
+              <a href="tel:+46123456789">+46 123 456 789</a>
+            </li>
+            <li>
+              <strong>E-post:</strong>
+              <a href="mailto:info@ljusochgemenskap.se"
+                >info@ljusochgemenskap.se</a
+              >
+            </li>
+            <li>
+              <strong>Besöksadress:</strong> Storgatan 12, 123 45 Stockholm,
+              Sverige
+            </li>
+          </ul>
+        </section>
+
+        <!-- Företagsinformation -->
+        <section class="footer-info">
+          <h2>Företagsinformation</h2>
+          <ul>
+            <li><strong>Företagsnamn</strong> Ljus & Gemenskap AB</li>
+            <li><strong>Organisationsnummer</strong> 556789-1234</li>
+            <li>
+              <strong>Vårt uppdrag</strong> Att främja samhällsansvar genom
+              hållbara produkter och positiva förändringar.
+            </li>
+          </ul>
+        </section>
+        <!-- Sociala Medie-länkar -->
+        <section class="footer-social">
+          <h2>Följ oss på sociala medier</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ljusochgemenskap"
+                target="_blank"
+                aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Copyright Information -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ljus & Gemenskap AB. Alla rättigheter reserverade.</p>
+      </div>
+    </footer>
+    <script src="src/header.js"></script>
+    <script src="src/webshop.js"></script>
+  </body>
+</html>
