@@ -33,6 +33,21 @@
       <link rel="stylesheet" href="src/product.css" />
     </noscript>
 
+    <!-- Preload Lightbox CSS -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback Lightbox css for older web browsers -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+      />
+    </noscript>
+
     <title>Produktsida 1 - Ljus & Gemenskap AB</title>
     <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
     <!-- Ladda footer CSS när sidan är helt laddad -->
@@ -83,11 +98,33 @@
     <main>
       <section class="product-details">
         <div class="product-image-container">
-          <img
-            src="src/productimages/a00001-175x175.webp"
-            alt="Vi smyckar julgranen med en stor stjärna"
-            class="product-image"
-          />
+          <a
+            href="src/productimages/a00001-800x800.webp"
+            target="_blank"
+            data-lightbox="productimages"
+            data-title="Produkt1"
+          >
+            <picture>
+              <!-- Modern format: AVIF -->
+              <source
+                srcset="src/productimages/a00001-175x175.avif"
+                type="image/avif"
+              />
+              <!-- Alternativ: WebP -->
+              <source
+                srcset="src/productimages/a00001-175x175.webp"
+                type="image/webp"
+              />
+              <!-- Fallback: JPG -->
+              <img
+                src="src/productimages/a00001-175x175.jpg"
+                alt="Vi smyckar julgranen med en stor stjärna"
+                class="product-image"
+                width="175"
+                height="175"
+              />
+            </picture>
+          </a>
         </div>
         <div class="product-info">
           <h1 class="product-name">Julgransstjärna</h1>

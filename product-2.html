@@ -83,11 +83,33 @@
     <main class="wrapper">
       <section class="product-details">
         <div class="product-image-container">
-          <img
-            src="src/productimages/a00002-175x175.webp"
-            alt="När mörkret kommer tänder vi den här 7-armade adventsljusstaken"
-            class="product-image"
-          />
+          <a
+            href="src/productimages/a00002-800x800.webp"
+            target="_blank"
+            data-lightbox="productimages"
+            data-title="Produkt2"
+          >
+            <picture>
+              <!-- Modern format: AVIF -->
+              <source
+                srcset="src/productimages/a00002-175x175.avif"
+                type="image/avif"
+              />
+              <!-- Alternativ: WebP -->
+              <source
+                srcset="src/productimages/a00002-175x175.webp"
+                type="image/webp"
+              />
+              <!-- Fallback: JPG -->
+              <img
+                src="src/productimages/a00002-175x175.jpg"
+                alt="När mörkret kommer tänder vi den här 7-armade adventsljusstaken"
+                class="product-image"
+                width="175"
+                height="175"
+              />
+            </picture>
+          </a>
         </div>
         <div class="product-info">
           <h1 class="product-name">Adventsljusstake i trä</h1>

@@ -83,11 +83,33 @@
     <main class="wrapper">
       <section class="product-details">
         <div class="product-image-container">
-          <img
-            src="src/productimages/a00003-175x175.webp"
-            alt="Vi smyckar julgranen med röda blänkande julgranskulor"
-            class="product-image"
-          />
+          <a
+            href="src/productimages/a00003-800x800.webp"
+            target="_blank"
+            data-lightbox="productimages"
+            data-title="Produkt3"
+          >
+            <picture>
+              <!-- Modern format: AVIF -->
+              <source
+                srcset="src/productimages/a00003-175x175.avif"
+                type="image/avif"
+              />
+              <!-- Alternativ: WebP -->
+              <source
+                srcset="src/productimages/a00003-175x175.webp"
+                type="image/webp"
+              />
+              <!-- Fallback: JPG -->
+              <img
+                src="src/productimages/a00003-175x175.jpg"
+                alt="Vi smyckar julgranen med röda blänkande julgranskulor"
+                class="product-image"
+                width="175"
+                height="175"
+              />
+            </picture>
+          </a>
         </div>
         <div class="product-info">
           <h1 class="product-name">Röda julgranskulor</h1>
