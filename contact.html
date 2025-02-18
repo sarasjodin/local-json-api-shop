@@ -91,99 +91,102 @@
 
     <!-- Main Content Section -->
     <main class="contact-page">
-      <section class="contact-section">
+      <div class="contact-wrapper">
         <h1>Kontakta oss</h1>
+        <section class="contact-section">
+          <h2>Vi vill gärna att du hör av dig!</h2>
 
-        <p>
-          Vi på Ljus & Gemenskap AB värdesätter alla våra kunder och samarbeten.
-          Har du några frågor om våra produkter eller vårt arbete för
-          samhällsansvar? Tveka inte att kontakta oss – vi är här för att
-          hjälpa!
-        </p>
+          <p>
+            Vi på Ljus & Gemenskap AB värdesätter alla våra kunder och
+            samarbeten. Har du några frågor om våra produkter eller vårt arbete
+            för samhällsansvar? Tveka inte att kontakta oss – vi är här för att
+            hjälpa!
+          </p>
 
-        <h2>Våra kontaktuppgifter</h2>
+          <h2>Våra kontaktuppgifter</h2>
 
-        <address>
-          <ul>
-            <li>
-              <strong>Telefon</strong>
-              <a href="tel:+46123456789">+46 123 456 789</a>
-            </li>
-            <li>
-              <strong>E-post</strong>
-              <a href="mailto:info@ljusochgemenskap.se"
-                >info@ljusochgemenskap.se</a
-              >
-            </li>
-            <li>
-              <strong>Besöksadress</strong> Ljus & Gemenskap AB, Storgatan 12,
-              123 45 Stockholm
-            </li>
-          </ul>
-        </address>
+          <address>
+            <ul>
+              <li>
+                <strong>Telefon</strong>
+                <a href="tel:+46123456789">+46 123 456 789</a>
+              </li>
+              <li>
+                <strong>E-post</strong>
+                <a href="mailto:info@ljusochgemenskap.se"
+                  >info@ljusochgemenskap.se</a
+                >
+              </li>
+              <li>
+                <strong>Besöksadress</strong> Ljus & Gemenskap AB, Storgatan 12,
+                123 45 Stockholm
+              </li>
+            </ul>
+          </address>
 
-        <h2 id="contact-form-title">Kontakta oss via formuläret</h2>
-        <form
-          action="/submit-form"
-          method="POST"
-          id="contact-form"
-          aria-labelledby="contact-form-title"
-        >
-          <div>
-            <label for="name">Namn</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              aria-required="true"
-              placeholder="Ditt namn"
-            />
-          </div>
-          <div>
-            <label for="email">E-post</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              aria-required="true"
-              placeholder="Din e-postadress"
-            />
-          </div>
-          <div>
-            <label for="message">Meddelande</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              aria-required="true"
-              placeholder="Skriv ditt meddelande här"
-            ></textarea>
-          </div>
-
-          <!-- Privacy and Consent -->
-          <div class="privacy-container">
-            <label for="privacy-consent">
+          <h2 id="contact-form-title">Kontakta oss via formuläret</h2>
+          <form
+            action="/submit-form"
+            method="POST"
+            id="contact-form"
+            aria-labelledby="contact-form-title"
+          >
+            <div>
+              <label for="name">Namn</label>
               <input
-                type="checkbox"
-                id="privacy-consent"
-                name="privacy-consent"
+                type="text"
+                id="name"
+                name="name"
                 required
+                aria-required="true"
+                placeholder="Ditt namn"
               />
-              <span
-                >Jag samtycker till att mina personuppgifter behandlas enligt
-                <a href="privacy-policy.html" target="_blank"
-                  >integritetspolicyn</a
-                >.
-              </span>
-            </label>
-          </div>
+            </div>
+            <div>
+              <label for="email">E-post</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                placeholder="Din e-postadress"
+              />
+            </div>
+            <div>
+              <label for="message">Meddelande</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+                placeholder="Skriv ditt meddelande här"
+              ></textarea>
+            </div>
 
-          <button class="shop-button" type="submit">Skicka meddelande</button>
-        </form>
-      </section>
+            <!-- Privacy and Consent -->
+            <div class="privacy-container">
+              <label for="privacy-consent">
+                <input
+                  type="checkbox"
+                  id="privacy-consent"
+                  name="privacy-consent"
+                  required
+                />
+                <span
+                  >Jag samtycker till att mina personuppgifter behandlas enligt
+                  <a href="privacy-policy.html" target="_blank"
+                    >integritetspolicyn</a
+                  >.
+                </span>
+              </label>
+            </div>
+
+            <button class="shop-button" type="submit">Skicka meddelande</button>
+          </form>
+        </section>
+      </div>
     </main>
 
     <!-- Footer Section -->

@@ -437,18 +437,23 @@ form button:hover {
 }
 
 .privacy-container label {
-  display: inline-flex; /* Gör så att barnen placeras horisontellt */
-  align-items: center; /* Justerar checkboxen och texten vertikalt */
-  gap: 0.5rem; /* Lägger till avstånd mellan checkboxen och texten */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .privacy-container a {
-  text-decoration: underline; /* Valfritt, ger länken ett streck */
-  color: blue; /* Valfritt, för länkens färg */
+  text-decoration: underline;
+  color: #926f34;
 }
 
 .privacy-container input[type='checkbox'] {
   margin: 0; /* Tar bort standardmarginalen för checkboxen */
+}
+
+html body.wrapper.light-theme main.contact-page h1 {
+  padding: 0 2rem;
+  color: #926f34;
 }
 
 @media (min-width: 420px) and (max-width: 600px) {
@@ -464,6 +469,10 @@ form button:hover {
 
   #categories ul {
     display: flex;
+  }
+
+  html body.wrapper.light-theme main.contact-page h1 {
+    padding: 0 2rem;
   }
 }
 
@@ -497,6 +506,22 @@ form button:hover {
   #categories ul {
     display: flex;
   }
+
+  html body.wrapper.light-theme main.contact-page h1 {
+    padding: 0 3rem;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  html body.wrapper.light-theme main.contact-page h1 {
+    padding: 0 2rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {
@@ -519,6 +544,18 @@ form button:hover {
 
   #categories ul {
     display: flex;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  html body.wrapper.light-theme main.contact-page h1 {
+    padding: 0 2rem;
   }
 }
 
@@ -547,5 +584,17 @@ form button:hover {
 
   #categories ul {
     display: flex;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  html body.wrapper.light-theme main.contact-page h1 {
+    padding: 0 2rem;
   }
 }
