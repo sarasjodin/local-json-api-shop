@@ -185,9 +185,9 @@ ul li {
   margin-bottom: 1rem;
 }
 
-.two-columns h2 {
-  break-before: column; /* Börja rubriker på ny kolumn om nödvändigt */
-}
+/* .two-columns h2 {
+  break-before: column;  */ /* Börja rubriker på ny kolumn om nödvändigt */
+/* } */
 
 #image-carousel {
   padding: 0 1rem 0 1rem;
