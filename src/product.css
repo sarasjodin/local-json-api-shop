@@ -159,6 +159,16 @@ h2 {
   padding: 2rem;
 }
 
+.product-video {
+  width: 250px; /* Sätt videons maxstorlek */
+  height: 250px;
+  cursor: pointer; /* Gör att användaren ser att den är klickbar */
+  object-fit: scale-down; /* Säkerställer att videon anpassas snyggt */
+  padding: 2rem;
+  background-color: black;
+  border-radius: 8px;
+}
+
 /* Responsivitet */
 @media (max-width: 1024px) {
   .product-details {
