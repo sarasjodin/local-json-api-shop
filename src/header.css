@@ -332,7 +332,75 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .company-name {
+    display: block; /* Visa produktnamnet */
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .hamburger-menu {
+    display: none; /* Dölj hamburgermenyn */
+  }
+
+  .main-header {
+    grid-template-areas: 'logo menu';
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  /* Laptop styling för shoppen */
+  .julshop-subpage .main-header,
+  .julshop-page .main-header {
+    grid-template-areas: 'logo name menu cart';
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .navbar,
+  .julshop-page .navbar {
+    justify-content: center; /* Centrera meny */
+    flex-direction: row; /* Vertikal meny */
+  }
+
+  .julshop-subpage .bag,
+  .julshop-page .bag {
+    grid-area: cart; /* Högerställd cart */
+  }
+
+  .julshop-subpage .navbar-container,
+  .julshop-page .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+
+  .navbar-container {
+    display: grid;
+    position: unset;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center; /* Centrera meny */
+    gap: 2rem;
+    background-color: unset;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    /*Set max-width to prevent layout growth > 1600px*/
+    max-width: 1600px;
+    margin: 0 auto; /* Center the content */
+  }
   .company-name {
     display: block; /* Visa produktnamnet */
     font-size: 1.5rem;
