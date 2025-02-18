@@ -133,12 +133,8 @@ body .light-theme {
 /* Grid layout för produktbilder */
 .image-grid {
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-}
-
-.image-grid {
-  grid-template-columns: 1fr; /* 2 kolumn för mobil */
-  gap: 7rem;
 }
 
 /* Thumbnail styling */
@@ -160,17 +156,8 @@ body .light-theme {
   margin-top: 0.5rem;
   color: #555;
   line-height: 1.5;
-  padding: 1.5rem;
+  padding: 3rem;
 }
-
-/* .about-section {
-  padding: 3rem 7rem;
-} */
-
-/* .about-section h1 {
-  color: #926f34;
-  margin-bottom: 2rem;
-} */
 
 .about-section h2 {
   font-size: 1.5rem;
@@ -202,22 +189,66 @@ ul li {
   break-before: column; /* Börja rubriker på ny kolumn om nödvändigt */
 }
 
+#image-carousel {
+  padding: 0 1rem 0 1rem;
+}
+
+#image-carousel h2 {
+  padding: 0 3rem 0 3rem;
+}
+
 @media (min-width: 600px) and (max-width: 800px) {
   .image-grid {
-    grid-template-columns: repeat(1, 1fr); /* 3 kolumner för tablet */
+    grid-template-columns: repeat(2, 3fr); /* 2 kolumner för tablet */
   }
+
+  #image-carousel h2 {
+    padding: 0 4rem 0 4rem;
+  }
+
+  .two-columns {
+    column-count: 2; /* Antal kolumner */
+    column-gap: 2rem; /* Mellanrum mellan kolumnerna */
+  }
+
   section.main-content {
     padding: 3rem 5rem;
   }
 
-  #image-carousel {
-    padding-top: 0;
+  /* Caption styling */
+  .image-caption {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #555;
+    line-height: 1.5;
+    padding: 1.5rem;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
   .image-grid {
-    grid-template-columns: repeat(2, 3fr); /* 2 kolumner för tablet */
+    grid-template-columns: repeat(3, 2fr); /* 3 kolumner för laptop */
+    gap: 1rem;
+  }
+  .image-item img {
+    min-width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain; /* Ser till att bilden behåller sitt bildförhållande */
+    display: block;
+    margin: auto;
+  }
+
+  #image-carousel h2 {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .two-columns {
+    column-count: 2; /* Antal kolumner */
+    column-gap: 7rem; /* Mellanrum mellan kolumnerna */
   }
   .two-columns {
     column-count: 2; /* Antal kolumner */
@@ -226,14 +257,29 @@ ul li {
   section.main-content {
     padding: 3.5rem 6rem;
   }
-  #image-carousel {
-    padding-top: 0;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1600px) {
   .image-grid {
-    grid-template-columns: repeat(3, 2fr); /* 3 kolumner för laptop */
+    grid-template-columns: repeat(5, 1fr); /* 3 kolumner för laptop */
+    gap: 1rem;
+  }
+
+  /* Thumbnail styling */
+  .image-item img {
+    min-width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain; /* Ser till att bilden behåller sitt bildförhållande */
+    display: block;
+    margin: auto;
+  }
+
+  #image-carousel h2 {
+    padding: 0 6rem 0 6rem;
   }
 
   /* Två kolumner */
@@ -243,9 +289,6 @@ ul li {
   }
   section.main-content {
     padding: 4rem 7rem;
-  }
-  #image-carousel {
-    padding-top: 0;
   }
 }
 
@@ -256,7 +299,21 @@ ul li {
     margin: 0 auto; /* Center the content */
   }
   .image-grid {
-    grid-template-columns: repeat(3, 2fr); /* 3 kolumner för laptop */
+    grid-template-columns: repeat(5, 1fr); /* 3 kolumner för laptop */
+    gap: 1rem;
+  }
+
+  /* Thumbnail styling */
+  .image-item img {
+    min-width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain; /* Ser till att bilden behåller sitt bildförhållande */
+    display: block;
+    margin: auto;
   }
   /* Två kolumner */
   .two-columns {
@@ -267,7 +324,8 @@ ul li {
   section.main-content {
     padding: 4rem 7rem;
   }
-  #image-carousel {
-    padding-top: 0;
+
+  #image-carousel h2 {
+    padding: 0 6rem 0 6rem;
   }
 }
