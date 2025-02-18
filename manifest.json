@@ -13,16 +13,6 @@
       "type": "image/png"
     },
     {
-      "src": "favicon-32x32.webp",
-      "sizes": "32x32",
-      "type": "image/webp"
-    },
-    {
-      "src": "favicon-32x32.avif",
-      "sizes": "32x32",
-      "type": "image/avif"
-    },
-    {
       "src": "favicon-180x180.png",
       "sizes": "180x180",
       "type": "image/png",
