@@ -169,6 +169,21 @@ h2 {
   border-radius: 8px;
 }
 
+a:focus-visible {
+  outline: 2px solid #ffcc00;
+  border-radius: 8px;
+}
+
+.shop-button:focus-visible {
+  outline: 2px solid #3d3d3d;
+}
+
+.product-video:focus-visible,
+.product-images:focus-visible {
+  outline: 4px solid #ffcc00;
+  border-radius: 8px;
+}
+
 /* Responsivitet */
 @media (max-width: 1024px) {
   .product-details {
