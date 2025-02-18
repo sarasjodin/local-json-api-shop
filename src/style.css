@@ -197,6 +197,37 @@ ul li {
   padding: 0 3rem 0 3rem;
 }
 
+.developer-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.developer-image img {
+  border-radius: 12px; /* Mjukare rundade hörn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtil skugga för att lyfta bilden */
+  border: 4px solid #d4af37; /* Elegant guldram för julkänsla */
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.developer-image img:hover {
+  transform: scale(1.05); /* Lätt inzoomning vid hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Förstärkt skugga vid hover */
+}
+
+.developer-image figcaption {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+  margin-top: 10px;
+  max-width: 80%;
+}
+
 @media (min-width: 600px) and (max-width: 800px) {
   .image-grid {
     grid-template-columns: repeat(2, 3fr); /* 2 kolumner för tablet */
