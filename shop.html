@@ -21,6 +21,17 @@
     <noscript>
       <link rel="stylesheet" href="src/header.css" />
     </noscript>
+    <link
+      rel="preload"
+      href="src/style.css"
+      as="style"
+      type="text/css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <!-- Fallback for older web browsers -->
+    <noscript>
+      <link rel="stylesheet" href="src/style.css" type="text/css" />
+    </noscript>
     <!-- Preload general CSS style -->
     <link
       rel="preload"
@@ -54,16 +65,18 @@
     <title>Julshop - Ljus & Gemenskap AB</title>
   </head>
   <body class="wrapper julshop-page">
-    <div>
+    <main id="main-content">
       <header class="main-header">
         <div class="logo-container">
-          <img
-            src="src/images/logo.svg"
-            alt="Ljus & Gemenskap AB"
-            class="logo"
-            width="25"
-            height="50"
-          />
+          <a href="index.html">
+            <img
+              src="src/images/logo.svg"
+              alt="Ljus & Gemenskap AB"
+              class="logo"
+              width="25"
+              height="50"
+            />
+          </a>
           <a href="index.html"><p class="company-name">Ljus & Gemenskap</p></a>
         </div>
         <button class="hamburger-menu" aria-label="Öppna meny">☰</button>
@@ -121,9 +134,9 @@
       <div class="products-container">
         <div class="product-images"></div>
       </div>
-    </div>
-    <script src="src/header.js" defer></script>
-    <script src="src/main.js" defer></script>
+    </main>
+    <script src="src/header.js"></script>
+    <script src="src/main.js"></script>
     <script src="src/webshop.js" defer></script>
   </body>
 </html>

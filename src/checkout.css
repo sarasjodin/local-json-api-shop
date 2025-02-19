@@ -114,9 +114,10 @@ h1 {
 
 /* Tabellstil */
 table {
-  width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
+  max-width: 45%;
 }
 
 thead {
@@ -175,7 +176,7 @@ tbody tr:hover {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1600px) {
+@media (min-width: 600px) and (max-width: 1200px) {
   .wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -187,6 +188,29 @@ tbody tr:hover {
   .two-columns {
     column-count: 2;
     column-gap: 7rem;
+  }
+
+  table {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .image-grid {
+    grid-template-columns: repeat(3, 2fr);
+  }
+  /* Två kolumner */
+  .two-columns {
+    column-count: 2;
+    column-gap: 7rem;
+  }
+
+  table {
+    max-width: 65%;
   }
 
   section.main-content {
@@ -202,6 +226,11 @@ tbody tr:hover {
     max-width: 1600px;
     margin: 0 auto;
   }
+
+  table {
+    max-width: 65%;
+  }
+
   .image-grid {
     grid-template-columns: repeat(3, 2fr);
   }

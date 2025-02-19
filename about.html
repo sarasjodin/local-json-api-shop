@@ -62,6 +62,7 @@
     <title>Om oss - Ljus & Gemenskap AB</title>
   </head>
   <body class="wrapper">
+    <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
     <header class="main-header">
       <div class="logo-container">
         <a href="index.html">
@@ -87,7 +88,7 @@
     </header>
 
     <!-- Main Content Section -->
-    <main>
+    <main id="main-content">
       <section class="about-section main-content">
         <h1>Om oss</h1>
         <article>
@@ -133,44 +134,45 @@
           <h2>Om utvecklaren</h2>
           <div class="two-columns">
             <figure class="developer-image">
-              <picture>
-                <!-- AVIF-format för bästa komprimering -->
-                <source
-                  srcset="
-                    src/images/developer-800x800.avif 800w,
-                    src/images/developer-600x600.avif 600w,
-                    src/images/developer-400x400.avif 400w,
-                    src/images/developer-200x200.avif 200w
-                  "
-                  sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
-                  type="image/avif"
-                />
-                <!-- WebP-format som alternativ -->
-                <source
-                  srcset="
-                    src/images/developer-800x800.webp 800w,
-                    src/images/developer-600x600.webp 600w,
-                    src/images/developer-400x400.webp 400w,
-                    src/images/developer-200x200.webp 200w
-                  "
-                  sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
-                  type="image/webp"
-                />
-                <!-- JPG som fallback för äldre webbläsare -->
-                <img
-                  src="src/images/developer-400x400.jpg"
-                  srcset="
-                    src/images/developer-800x800.jpg 800w,
-                    src/images/developer-600x600.jpg 600w,
-                    src/images/developer-400x400.jpg 400w,
-                    src/images/developer-200x200.jpg 200w
-                  "
-                  sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
-                  alt="Sara, webbutvecklaren bakom denna webbplats"
-                  width="400"
-                  height="400"
-                />
-              </picture>
+              <a href="https://it.linkedin.com/in/sjodinscolari"
+                ><picture>
+                  <!-- AVIF-format för bästa komprimering -->
+                  <source
+                    srcset="
+                      src/images/developer-800x800.avif 800w,
+                      src/images/developer-600x600.avif 600w,
+                      src/images/developer-400x400.avif 400w,
+                      src/images/developer-200x200.avif 200w
+                    "
+                    sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
+                    type="image/avif"
+                  />
+                  <!-- WebP-format som alternativ -->
+                  <source
+                    srcset="
+                      src/images/developer-800x800.webp 800w,
+                      src/images/developer-600x600.webp 600w,
+                      src/images/developer-400x400.webp 400w,
+                      src/images/developer-200x200.webp 200w
+                    "
+                    sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
+                    type="image/webp"
+                  />
+                  <!-- JPG som fallback för äldre webbläsare -->
+                  <img
+                    src="src/images/developer-400x400.jpg"
+                    srcset="
+                      src/images/developer-800x800.jpg 800w,
+                      src/images/developer-600x600.jpg 600w,
+                      src/images/developer-400x400.jpg 400w,
+                      src/images/developer-200x200.jpg 200w
+                    "
+                    sizes="(min-width: 1200px) 800px, (min-width: 768px) 600px, (min-width: 480px) 400px, 200px"
+                    alt="Sara, webbutvecklaren bakom denna webbplats"
+                    width="400"
+                    height="400"
+                  /> </picture
+              ></a>
               <figcaption>
                 Sara, webbutvecklaren bakom denna webbplats.
               </figcaption>
@@ -348,7 +350,7 @@
               <!-- LinkedIn -->
               <li class="social-icon linkedin">
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://it.linkedin.com/in/sjodinscolari"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Besök vår LinkedIn-sida"
@@ -377,6 +379,6 @@
         <p>&copy; 2025 Ljus & Gemenskap AB. Alla rättigheter reserverade.</p>
       </div>
     </footer>
-    <script src="src/header.js" defer></script>
+    <script src="src/header.js"></script>
   </body>
 </html>

@@ -33,6 +33,12 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
+.contact-section h2 {
+  color: #926f34;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 p {
   color: black;
 }
@@ -96,8 +102,6 @@ p {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
   animation: pulse 1.5s infinite;
   color: rgb(255, 255, 255);
-  outline: 2px solid #dfbd69 !important;
-  border-radius: 8px;
 }
 
 .shop-button:active,

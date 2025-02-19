@@ -159,7 +159,7 @@ h2 {
   padding: 2rem;
 }
 
-.product-video {
+#product2-video {
   width: 250px; /* Sätt videons maxstorlek */
   height: 250px;
   cursor: pointer; /* Gör att användaren ser att den är klickbar */
@@ -169,16 +169,11 @@ h2 {
   border-radius: 8px;
 }
 
-a:focus-visible {
-  outline: 2px solid #ffcc00;
-  border-radius: 8px;
-}
-
 .shop-button:focus-visible {
   outline: 2px solid #3d3d3d;
 }
 
-.product-video:focus-visible,
+#product2-video:focus-visible,
 .product-images:focus-visible {
   outline: 4px solid #ffcc00;
   border-radius: 8px;
