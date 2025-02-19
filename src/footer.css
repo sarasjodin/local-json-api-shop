@@ -80,14 +80,14 @@ footer strong {
 
 .social-icons {
   display: flex;
-  gap: 10px; /* Ger mellanrum mellan ikoner */
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .social-icons li {
-  display: inline-block; /* Ser till att ikonerna placeras snyggt */
+  display: inline-block;
 }
 
 .social-icons a {
@@ -95,14 +95,14 @@ footer strong {
   width: 40px;
   height: 40px;
   padding: 5px; /* Lägg till lite extra klickyta */
-  border-radius: 50%; /* Gör ikonerna runda */
+  border-radius: 50%;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
   background-color: rgba(255, 215, 0, 0.5);
-  transform: scale(1.1); /* Ger snygg effekt vid hover */
+  transform: scale(1.1);
   outline: none;
 }
 
