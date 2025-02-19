@@ -101,12 +101,6 @@ section {
   }
 }
 
-#checkout img {
-  width: 75px;
-  height: 75px;
-  border-radius: 8px;
-}
-
 h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -114,23 +108,31 @@ h1 {
 
 /* Tabellstil */
 table {
-  min-width: 100%;
+  min-width: 20%;
   border-collapse: collapse;
   margin-bottom: 2rem;
-  max-width: 45%;
 }
 
 thead {
   background-color: #f4f4f4;
 }
 
+#checkout img {
+  min-width: 25px;
+  max-width: 35px;
+  height: auto;
+  border-radius: 8px;
+}
+
 thead td {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  padding: 0.3rem;
 }
 
 tbody td {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  padding: 0.3rem;
 }
 
 td {
@@ -191,7 +193,33 @@ tbody tr:hover {
   }
 
   table {
-    max-width: 50%;
+    min-width: 40%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  #checkout img {
+    min-width: 100px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  thead td {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  tbody td {
+    font-size: 0.8rem;
+  }
+
+  thead td {
+    padding: 1rem;
+  }
+
+  tbody td {
+    padding: 1rem;
   }
 }
 
@@ -209,15 +237,41 @@ tbody tr:hover {
     column-gap: 7rem;
   }
 
-  table {
-    max-width: 65%;
-  }
-
   section.main-content {
     padding: 7rem 10rem;
   }
   section {
     padding: 5rem;
+  }
+
+  table {
+    min-width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  #checkout img {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  thead td {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  tbody td {
+    font-size: 0.8rem;
+  }
+
+  thead td {
+    padding: 2rem;
+  }
+
+  tbody td {
+    padding: 2rem;
   }
 }
 
@@ -225,10 +279,6 @@ tbody tr:hover {
   .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-  }
-
-  table {
-    max-width: 65%;
   }
 
   .image-grid {
@@ -245,5 +295,33 @@ tbody tr:hover {
   }
   section {
     padding: 5rem;
+  }
+  table {
+    min-width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  #checkout img {
+    min-width: 150px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  thead td {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  tbody td {
+    font-size: 0.8rem;
+  }
+  thead td {
+    padding: 2rem;
+  }
+
+  tbody td {
+    padding: 2rem;
   }
 }
