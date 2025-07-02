@@ -1,6 +1,6 @@
 # local-json-api-shop / christmas-shop-api-json
 <a href="https://christmas-shop-api-json.netlify.app/shop" target="_blank" rel="noopener noreferrer">
-Open Live Demo in new tab
+Open Live Demo
 </a> <br><br>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7375335-801d-4914-928c-dfc363417d77/deploy-status)](https://app.netlify.com/projects/christmas-shop-api-json/deploys)
